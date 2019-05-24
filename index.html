@@ -3,41 +3,26 @@
 <head>
 <meta charset="utf-8" />
 <title>Review comments</title>
-<meta name="description" content="Lists open issues in i18n Activity github repositories." />
-<script type="text/javascript">
-var f = { }
+<meta name="description" content="Lists open issues in a11y Review github repositories." />
 
-// AUTHORS should fill in these assignments:
-f.directory = 'i18n-wg/repostatus/'+'/'; // the path to this file, not including /International or the file name
-f.filename = 'reviews'; // the file name WITHOUT extensions
-f.authors = 'Richard Ishida, W3C'; // author(s) and affiliations
-f.previousauthors = ''; // as above
-f.modifiers = ''; // people making substantive changes, and their affiliation
-f.searchString = 'reviews-openissues'; // blog search string - usually the filename without extensions
-f.firstPubDate = '2106-03-16'; // date of the first publication of the document (after review)
-f.lastSubstUpdate = { date:'2106-07-15', time:'07:18'}  // date and time of latest substantive changes to this document
-f.status = 'notreviewed';  // should be one of draft, review, published, notreviewed or obsolete
-f.path = 'https://w3c.github.io/i18n-drafts/' // what you need to prepend to a URL to get to the /International directory 
+<!--
+    To clone this index for another horizontal review activity:
 
-// AUTHORS AND TRANSLATORS should fill in these assignments:
-f.thisVersion = { date:'2106-07-15', time:'07:18'} // date and time of latest edits to this document/translation
-f.contributors = ''; // people providing useful contributions or feedback during review or at other times
-// also make sure that the lang attribute on the html tag is correct!
+    replace "https://github.com/w3c/a11y-review/" with the repo containing the tracker and review radar
 
-// TRANSLATORS should fill in these assignments:
-f.translators = 'xxxNAME, ORG'; // translator(s) and their affiliation - a elements allowed, but use double quotes for attributes
+    replace http://w3c.github.io/a11y-review/repostatus/ with the location of the tracked repo data
 
-f.breadcrumb = 'characters';
+    search and replace "APA WG" with the appropriate review group
 
-f.additionalLinks = ''
-</script>
-<script type="text/javascript" src="index-data/translations.js"> </script>
-<script type="text/javascript" src="https://w3c.github.io/i18n-drafts/javascript/doc-structure/article-dt.js"> </script>
-<script type="text/javascript" src="https://w3c.github.io/i18n-drafts/javascript/boilerplate-text/boilerplate-en.js"></script><!--TRANSLATORS must change -en to the subtag for their language!-->
-<script type="text/javascript" src="https://w3c.github.io/i18n-drafts/javascript/doc-structure/sitepage.js"> </script>
-<script type="text/javascript" src="https://w3c.github.io/i18n-drafts/javascript/articletoc-html5.js"></script>
+    search and replace "A11Y" with the appropriate phrase
+-->
+    
+<script type="text/javascript" src="common/globals.js"> </script>
+<script type="text/javascript" src="common/sitepage.js"> </script>
 <script type="text/javascript" src="index-data/label-list.js"></script>
+<!--
 <link rel="stylesheet" href="https://w3c.github.io/i18n-drafts/style/sitepage-2016.css" type="text/css" />
+-->
 <link rel="stylesheet" href="index-data/local.css" type="text/css" />
 <link rel="copyright" href="#copyright"/>
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -66,18 +51,18 @@ var maxpages = 5
 <body>
 <header>
   <nav id="mainNavigation"></nav>
-  <script>document.getElementById('mainNavigation').innerHTML = mainNavigation</script> 
+  <script>document.getElementById('mainNavigation').innerHTML = mainNavigation</script>
 </header>
 <div class="content">
-<h1> Review comment tracker</h1>
+<h1>A11Y Review comment tracker</h1>
 <section id="sidebarExtras">
   <h2 class="notoc">Useful links</h2>
   <ul>
-    <li><a class="print" href="https://github.com/w3c/i18n-activity/issues">Tracker issues on Github</a></li>
-    <li><a class="print" href="https://github.com/w3c/i18n-activity/projects/1">Review radar</a></li>
-    <li><a class="print" href="https://www.w3.org/International/reviews/review-instructions">Review guidelines</a></li>
-    <li><a class="print" href="https://www.w3.org/International/reviews/openissues/">Previous tracker</a></li>
-    <li><a class="print" href="http://w3c.github.io/i18n-activity/repostatus/">I18n document issues</a></li>
+    <li><a class="print" href="https://github.com/w3c/a11y-review/issues">Tracker issues on Github</a></li>
+    <li><a class="print" href="https://github.com/w3c/a11y-review/projects/1">Review radar</a></li>
+    <li><a class="print" href="https://w3c.github.io/apa/fast/checklist.html">FAST checklist</a></li>
+    <li><a class="print" href="https://www.w3.org/WAI/APA/wiki/Category:Spec_Review">Previous tracker</a></li>
+    <li><a class="print" href="http://w3c.github.io/a11y-review/repostatus/">A11y document issues</a></li>
   </ul>
   <h2 class="notoc">Filter results</h2>
   <p>Click to show items with that label only:</p>
@@ -93,8 +78,8 @@ var maxpages = 5
   </ul>
 </section>
 <section>
-  <p>This page tracks comments made by the i18n WG on the specs of other WGs. It only shows tracker issues the i18n WG has not closed. (Issues may remain open in the i18n tracker even if closed by the other WG in their repo.)</p>
-  <p>The sections and items within those sections are ordered by the last modified date of the items in the <em>tracker</em> repository (not the discussions). The mostly recently changed items appear highest. The link on the left of each line links directly to the issue where the discussion is taking place. The date indicates when the <em>tracker</em> item was modified, and the right-hand column links to the issue used to track the discussion in <a href="https://github.com/w3c/i18n-activity/issues">the i18n-activity github repo</a>.</p>
+  <p>This page tracks comments made by the <a href="https://www.w3.org/WAI/APA/">APA WG</a> on the specs of other WGs. It only shows tracker issues the APA WG has not closed. (Issues may remain open in the a11y tracker even if closed by the other WG in their repo.)</p>
+  <p>The sections and items within those sections are ordered by the last modified date of the items in the <em>tracker</em> repository (not the discussions). The mostly recently changed items appear highest. The link on the left of each line links directly to the issue where the discussion is taking place. The date indicates when the <em>tracker</em> item was modified, and the right-hand column links to the issue used to track the discussion in <a href="https://github.com/w3c/a11y-review/issues">the a11y-review github repo</a>.</p>
   <p id="total">Loading data...</p>
 </section>
 <section id="rawdata">
@@ -137,7 +122,7 @@ var maxpages = 5
 			// Grab and present the issue list from GitHub
 			function fetchIssues(page) {
 				var request = new XMLHttpRequest();
-				request.open('get','https://api.github.com/repos/w3c/i18n-activity/issues?per_page=100&page='+page)
+				request.open('get','https://api.github.com/repos/w3c/a11y-review/issues?per_page=100&page='+page)
 				request.onload = function () {
 						var temp = JSON.parse(request.responseText)
 						for (var i=0;i<temp.length;i++) {
@@ -252,7 +237,7 @@ var maxpages = 5
 					td.title = 'Issue number in the tracker repo'
                     td.className = 'trackerId'
 					a = document.createElement('a')
-					a.href = 'https://github.com/w3c/i18n-activity/issues/'+issueData['number']
+					a.href = 'https://github.com/w3c/a11y-review/issues/'+issueData['number']
 					a.target = '_blank'
 					a.textContent = issueData['number']
 					td.appendChild(a)
