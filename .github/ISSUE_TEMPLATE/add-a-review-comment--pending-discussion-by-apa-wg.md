@@ -1,9 +1,8 @@
 ---
 name: Add a review comment (pending discussion by APA WG)
-about: For use by APA reviewers to propose issues that will be raised against another
-  spec after discussion with the APA WG.
+about: For use by APA reviewers to propose issues that will be raised against another spec after discussion with the APA WG.
 title: Short_but_informative_title_here
-labels: pending
+labels: pending, agenda+
 assignees: ''
 ---
 
@@ -16,11 +15,11 @@ url_that_points_to_the_relevant_place_in_the_spec
 
 comment_goes_here
 
-## Instructions: 
+## Instructions
 
 This follows the process at https://www.w3.org/WAI/APA/wiki/Horizontal_Review#For_Specifications_2
 
-1. Create the review comment you want to propose by replacing the prompts above these instructions, but **LEAVE ALL THE INSTRUCTIONS INTACT** 
+1. Create the review comment you want to propose by replacing the prompts above these instructions, but **LEAVE ALL THE INSTRUCTIONS INTACT**.
 
 2. Set a label to identify the spec: this starts with s: followed by the spec's short name. If you are unable to do that, ask a W3C staff contact to help.
 
